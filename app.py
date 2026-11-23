@@ -6,7 +6,12 @@ import streamlit as st
 st.set_page_config(page_title="Visit with Us — Wellness Package Predictor", layout="wide")
 st.title("Visit with Us — Wellness Tourism Package Predictor")
 
-MODEL_PATHS = ["models/best_model.pkl", "models/model.pkl", "models/model.joblib"]
+MODEL_PATHS = [
+    "best_wellness_model.joblib",
+    "models/best_model.pkl",
+    "models/model.pkl",
+    "models/model.joblib",
+]
 
 @st.cache_resource
 def load_model():
